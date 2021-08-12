@@ -17,6 +17,8 @@ This is just a simple Discord bot to demonstrate some of my coding style.
 
 - `$ npm i`
 - `$ node .`
+- `$ npm test` to test run tests
+- `$ npm run lint` to run eslint
 
 ### Or use Docker
 
