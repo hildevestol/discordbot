@@ -4,8 +4,6 @@ services:
     image: node:10-alpine
     working_dir: "/usr/src/app"
     user: node
-    ports:
-      - 8080:8080
     command: npm start
     volumes:
       - "./:/usr/src/app"
