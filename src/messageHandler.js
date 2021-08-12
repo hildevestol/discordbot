@@ -23,5 +23,5 @@ module.exports = (message) => {
 
   if (isCommand) commandHandler(message)
 
-  logger.info(`message received: "${message.content}"`)
+  logger.debug(`message received: "${message.content}"`)
 }
