@@ -1,3 +1,5 @@
+const logger = require('./logger')('messageHandler')
+
 module.exports = (message) => {
-  console.log('message received:', message.content)
+  logger.info('message received:', message.content)
 }
