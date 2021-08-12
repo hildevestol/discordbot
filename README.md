@@ -16,7 +16,7 @@ This is just a simple Discord bot to demonstrate some of my coding style.
 ## Local development
 
 - `$ npm i`
-- `$ node .`
+- `$ node .` or `npm start` to start the bot
 - `$ npm test` to test run tests
 - `$ npm run lint` to run eslint
 
@@ -29,6 +29,7 @@ This is just a simple Discord bot to demonstrate some of my coding style.
 - Create a `.env` file and copy the content from the `.env.sample` file
 - Add the token from your bot
 - Add a channel id for an info channel (this is just done to have a playground to send various messages to)
+- Change the `LOG_LEVEL`, `LOG_JSON` and `LOG_PRETTY_JSON` if you preffer other log level or log format
 
 ## Functionality
 
