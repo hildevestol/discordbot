@@ -10,7 +10,7 @@ const options = {
 
 const streamWrapper = () => {
   return new Writable({
-    write (chunk, encoding, callback) {
+    write (chunk, _encoding, callback) {
       const object = JSON.parse(chunk.toString())
       const indent = options.pretty ? 2 : 0
 
