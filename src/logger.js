@@ -12,15 +12,17 @@ const streamWrapper = () => {
   return new Writable({
     write (chunk, _encoding, callback) {
       const object = JSON.parse(chunk.toString())
-      const indent = options.pretty ? 2 : 0
+
+      let output
 
       if (!options.json) {
-        const output = Buffer.from(object.name + ': ' + object.message + '\n')
-        outputStream.write(output, 'buffer')
+        output = Buffer.from(object.name + ': ' + object.message + '\n')
       } else {
-        const output = Buffer.from(JSON.stringify(object, null, indent) + '\n')
-        outputStream.write(output, 'buffer')
+        const indent = options.pretty ? 2 : 0
+        output = Buffer.from(JSON.stringify(object, null, indent) + '\n')
       }
+
+      outputStream.write(output, 'buffer')
 
       callback()
     },
