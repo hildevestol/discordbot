@@ -27,3 +27,9 @@ This is just a simple Discord bot to demonstrate some of my coding style.
 - Create a `.env` file and copy the content from the `.env.sample` file
 - Add the token from your bot
 - Add a channel id for an info channel (this is just done to have a playground to send various messages to)
+
+## Functionality
+
+At the moment all the bot does is answer with "pong" if someone writes !ping.
+
+![example](discord-ping-pong.png)
