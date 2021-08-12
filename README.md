@@ -18,6 +18,10 @@ This is just a simple Discord bot to demonstrate some of my coding style.
 - `$ npm i`
 - `$ node .`
 
+### Or use Docker
+
+`docker-compose up` or `docker-compose run app sh` to start the container and exec into sh so that the you can run `npm start` inside the container or eg. `npm install..`
+
 ### First time setup
 
 - Create a `.env` file and copy the content from the `.env.sample` file
